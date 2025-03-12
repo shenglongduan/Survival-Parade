@@ -88,11 +88,16 @@ namespace ProjectSurvivor
 
         private void Update()
         {
-            var speed = Global.SuperRotateSword.Value
-                ? Time.frameCount * 10
-                : Global.RotateSwordSpeed.Value * Time.frameCount;
+            float baseSpeed = Global.RotateSwordSpeed.Value;
 
+            // 计算旋转角度增量，保证不同帧率下表现一致
+            float speed = Global.SuperRotateSword.Value
+                ? 10 * (Time.time * 60)  // 这里用 `Time.time * 60` 代替 `Time.frameCount`
+                : baseSpeed * (Time.time * 60);
+
+            // 旋转
             this.LocalEulerAnglesZ(-speed);
         }
+
     }
 }

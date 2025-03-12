@@ -82,5 +82,5 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Art/UIPrefab/UIGamePanel.prefab
 Dependencies:
-- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/bg"
-- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/fusion-pixel_ttf"
+- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/bg
+- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/fusion-pixel_ttf
