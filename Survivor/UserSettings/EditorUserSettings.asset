@@ -12,16 +12,16 @@ EditorUserSettings:
       value: 055500050451510b5456597143265d44454f4f2f2a7f24337d2a4963b2b56d3b
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 505057535207080a090c5b7711210844464e1a7c7b707062287d1b66e3e2643c
-      flags: 0
-    RecentlyUsedSceneGuid-3:
       value: 5007035e51530d5e0b580a7b42755e444e1640292a7f7467757b1f37b3e66d3b
       flags: 0
-    RecentlyUsedSceneGuid-4:
+    RecentlyUsedSceneGuid-3:
       value: 5b520d0503545b0d0c0c0a2715770748154f4d2c7d7d7e627a7d4a35b4e1646a
       flags: 0
-    RecentlyUsedSceneGuid-5:
+    RecentlyUsedSceneGuid-4:
       value: 500903565c005e5f0b58087b43735d4442154a2b2d7c276979781962bae66468
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 505057535207080a090c5b7711210844464e1a7c7b707062287d1b66e3e2643c
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
@@ -42,3 +42,4 @@ EditorUserSettings:
   m_VCAllowAsyncUpdate: 1
   m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1
+  m_CompressAssetsOnImport: 1

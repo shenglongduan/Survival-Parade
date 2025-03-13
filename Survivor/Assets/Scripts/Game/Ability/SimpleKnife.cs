@@ -46,7 +46,7 @@ namespace ProjectSurvivor
                                     var direction = enemy.NormalizedDirection2DFrom(Player.Default);
                                     self.transform.up = direction;
                                     var rigidbody2D = self.GetComponent<Rigidbody2D>();
-                                    rigidbody2D.velocity = direction * 10;
+                                    rigidbody2D.linearVelocity = direction * 10;
                                     var attackCount = 0;
                                     self.OnTriggerEnter2DEvent(collider =>
                                     {

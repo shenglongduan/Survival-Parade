@@ -9,7 +9,7 @@ namespace ProjectSurvivor
 	{
 		void Start()
 		{
-			SelfRigidbody2D.velocity = 
+			SelfRigidbody2D.linearVelocity = 
 				new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f)) *
 				Random.Range(Global.BasketBallSpeed.Value - 2, Global.BasketBallSpeed.Value + 2);;
 
@@ -35,7 +35,7 @@ namespace ProjectSurvivor
 						if (Random.Range(0, 1f) < 0.5f && collider && collider.attachedRigidbody &&
 						    Player.Default)
 						{
-							collider.attachedRigidbody.velocity =
+							collider.attachedRigidbody.linearVelocity =
 								collider.NormalizedDirection2DFrom(this) * 5 +
 								collider.NormalizedDirection2DFrom(Player.Default) * 10;
 						}
@@ -52,8 +52,8 @@ namespace ProjectSurvivor
 			if (normal.x > normal.y)
 			{
 				var rb = SelfRigidbody2D;
-				rb.velocity = new Vector2(rb.velocity.x,
-					Mathf.Sign(rb.velocity.y) * Random.Range(0.5f, 1.5f) *
+				rb.linearVelocity = new Vector2(rb.linearVelocity.x,
+					Mathf.Sign(rb.linearVelocity.y) * Random.Range(0.5f, 1.5f) *
 					Random.Range(Global.BasketBallSpeed.Value - 2, Global.BasketBallSpeed.Value + 2));
 
 				rb.angularVelocity = Random.Range(-360f, 360f);
@@ -61,11 +61,11 @@ namespace ProjectSurvivor
 			else
 			{
 				var rb = SelfRigidbody2D;
-                rb.velocity =
+                rb.linearVelocity =
                     new Vector2(
-                        Mathf.Sign(rb.velocity.x) * Random.Range(0.5f, 1.5f) * Random.Range(
+                        Mathf.Sign(rb.linearVelocity.x) * Random.Range(0.5f, 1.5f) * Random.Range(
                             Global.BasketBallSpeed.Value - 2, Global.BasketBallSpeed.Value + 2),
-                        rb.velocity.y);
+                        rb.linearVelocity.y);
 
                 rb.angularVelocity = Random.Range(-360f, 360f);
 			}

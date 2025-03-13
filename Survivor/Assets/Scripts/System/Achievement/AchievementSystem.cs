@@ -23,7 +23,7 @@ namespace ProjectSurvivor
                     .WithDescription("Hold on for three minutes.\nReward: 1000 coins.")
                     .WithIconName("achievement_time_icon")
                     .Condition(() => Global.CurrentSeconds.Value >= 60 * 3)
-                    // .Condition(() => Global.CurrentSeconds.Value >= 10)
+                    //.Condition(() => Global.CurrentSeconds.Value >= 10)
                     .OnUnlocked(_ => { Global.Coin.Value += 1000; }))
                 .Load(saveSystem);
             

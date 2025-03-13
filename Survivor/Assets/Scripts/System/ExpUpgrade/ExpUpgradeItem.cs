@@ -25,15 +25,21 @@ namespace ProjectSurvivor
 
         public BindableProperty<bool> Visible = new BindableProperty<bool>();
         private Func<int, string> mDescriptionFactory;
-        
-        
+
+
 
         public void Upgrade()
         {
+            if (CurrentLevel.Value >= MaxLevel)
+            {
+                return; // 等级已达上限，不执行升级
+            }
+
             CurrentLevel.Value++;
-            mOnUpgrade?.Invoke(this,CurrentLevel.Value);
+            mOnUpgrade?.Invoke(this, CurrentLevel.Value);
             ExpUpgradeSystem.CheckAllUnlockedFinish();
         }
+
 
 
         private Action<ExpUpgradeItem,int> mOnUpgrade;

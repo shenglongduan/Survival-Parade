@@ -111,8 +111,8 @@ namespace ProjectSurvivor
                 }
             }
 
-            SelfRigidbody2D.velocity =
-                Vector2.Lerp(SelfRigidbody2D.velocity, targetVelocity, 1 - Mathf.Exp(-Time.deltaTime * 5));
+            SelfRigidbody2D.linearVelocity =
+                Vector2.Lerp(SelfRigidbody2D.linearVelocity, targetVelocity, 1 - Mathf.Exp(-Time.deltaTime * 5));
         }
     }
 }

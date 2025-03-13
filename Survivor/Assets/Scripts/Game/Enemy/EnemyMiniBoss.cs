@@ -30,7 +30,7 @@ namespace ProjectSurvivor
 					{
 						var direction = (Player.Default.transform.position - transform.position).normalized;
 
-						SelfRigidbody2D.velocity = direction * MovementSpeed;
+						SelfRigidbody2D.linearVelocity = direction * MovementSpeed;
 
 						if ((Player.Default.transform.Position() - transform.Position()).magnitude <= 15)
 						{
@@ -39,7 +39,7 @@ namespace ProjectSurvivor
 					}
 					else
 					{
-						SelfRigidbody2D.velocity = Vector2.zero;
+						SelfRigidbody2D.linearVelocity = Vector2.zero;
 					}
 					
 					
@@ -47,7 +47,7 @@ namespace ProjectSurvivor
 			FSM.State(States.Warning)
 				.OnEnter(() =>
 				{
-					SelfRigidbody2D.velocity = Vector2.zero;
+					SelfRigidbody2D.linearVelocity = Vector2.zero;
 				})
 				.OnUpdate(() =>
 				{
@@ -79,7 +79,7 @@ namespace ProjectSurvivor
 				.OnEnter(() =>
 				{
 					var direction = (Player.Default.Position() - transform.Position()).normalized;
-					SelfRigidbody2D.velocity = direction * 15;
+					SelfRigidbody2D.linearVelocity = direction * 15;
 					dashStartPos = transform.Position();
 					dashStartDistanceToPlayer = (Player.Default.Position() - transform.Position()).magnitude;
 				})
@@ -96,7 +96,7 @@ namespace ProjectSurvivor
 			FSM.State(States.Wait)
 				.OnEnter(() =>
 				{
-					SelfRigidbody2D.velocity = Vector2.zero;
+					SelfRigidbody2D.linearVelocity = Vector2.zero;
 				})
 				.OnUpdate(() =>
 				{

@@ -37,7 +37,7 @@ namespace ProjectSurvivor
 
                                     if (Random.Range(0, 1.0f) < 0.5f)
                                     {
-                                        collider.attachedRigidbody.velocity =
+                                        collider.attachedRigidbody.linearVelocity =
                                             collider.NormalizedDirection2DFrom(self) * 5 +
                                             collider.NormalizedDirection2DFrom(Player.Default) * 10;
                                     }
@@ -90,12 +90,12 @@ namespace ProjectSurvivor
         {
             float baseSpeed = Global.RotateSwordSpeed.Value;
 
-            // ¼ÆËãÐý×ª½Ç¶ÈÔöÁ¿£¬±£Ö¤²»Í¬Ö¡ÂÊÏÂ±íÏÖÒ»ÖÂ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Í¬Ö¡ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
             float speed = Global.SuperRotateSword.Value
-                ? 10 * (Time.time * 60)  // ÕâÀïÓÃ `Time.time * 60` ´úÌæ `Time.frameCount`
+                ? 10 * (Time.time * 60)  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ `Time.time * 60` ï¿½ï¿½ï¿½ï¿½ `Time.frameCount`
                 : baseSpeed * (Time.time * 60);
 
-            // Ðý×ª
+            // ï¿½ï¿½×ª
             this.LocalEulerAnglesZ(-speed);
         }
 

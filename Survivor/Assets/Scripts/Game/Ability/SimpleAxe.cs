@@ -29,7 +29,7 @@ namespace ProjectSurvivor
 
                         var randomX = RandomUtility.Choose(-8, -5, -3, 3, 5, 8);
                         var randomY = RandomUtility.Choose(3, 5, 8);
-                        rigidbody2D.velocity = new Vector2(randomX, randomY);
+                        rigidbody2D.linearVelocity = new Vector2(randomX, randomY);
 
                         self.OnTriggerEnter2DEvent(collider =>
                         {
