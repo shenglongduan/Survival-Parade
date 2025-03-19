@@ -33,11 +33,11 @@ namespace ProjectSurvivor
 				{
 					var direction = (Player.Default.transform.position - transform.position).normalized;
 
-					SelfRigidbody2D.linearVelocity = direction * MovementSpeed;
+					SelfRigidbody2D.velocity = direction * MovementSpeed;
 				}
 				else
 				{
-					SelfRigidbody2D.linearVelocity = Vector2.zero;
+					SelfRigidbody2D.velocity = Vector2.zero;
 				}
 			}
 		}
@@ -60,7 +60,7 @@ namespace ProjectSurvivor
 			if (mIgnoreHurt && !force) return;
 			mIgnoreHurt = true;
 			
-			SelfRigidbody2D.linearVelocity = Vector2.zero;
+			SelfRigidbody2D.velocity = Vector2.zero;
 			FloatingTextController.Play(transform.position,value.ToString("0"),critical);
 			
 			Sprite.color = Color.red;

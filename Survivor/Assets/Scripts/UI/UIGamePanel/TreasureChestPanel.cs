@@ -81,7 +81,7 @@ namespace ProjectSurvivor
 					{
 						if (Random.Range(0, 1.0f) < 0.2f)
 						{
-							Content.text = "恢复 1 血量";
+							Content.text = "Restore 1 HP";
 							AudioKit.PlaySound("HP");
 							Global.HP.Value++;
 							Icon.Hide();
@@ -89,7 +89,7 @@ namespace ProjectSurvivor
 						}
 					}
                     
-					Content.text = "增加 50 金币";
+					Content.text = "Increase by 50 Coins";
 					Global.Coin.Value += 50;
 					Icon.Hide();
 				}

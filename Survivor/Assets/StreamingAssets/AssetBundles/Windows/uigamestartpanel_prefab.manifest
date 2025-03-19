@@ -6,7 +6,7 @@ Hashes:
     Hash: 3bebca45ffa936d94caef651f2b854fa
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d9df620ac00b8922e2af71aaa6b190d4
+    Hash: 1652ce5f0cea86d4b9db29101c54a841
   IncrementalBuildHash:
     serializedVersion: 2
     Hash: 3bebca45ffa936d94caef651f2b854fa
@@ -17,33 +17,33 @@ ClassTypes:
 - Class: 28
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: c00df7aab46f36c4e8cd2abf19283cb3, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: aa15611da831f884c9b4c6dfe75a5f29, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 4bdc7b52d1d7a9044bd22c906f8387b8, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2c7383fc720761d409a0809277ad9108, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4bdc7b52d1d7a9044bd22c906f8387b8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c00df7aab46f36c4e8cd2abf19283cb3, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aa15611da831f884c9b4c6dfe75a5f29, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2c7383fc720761d409a0809277ad9108, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -84,5 +84,5 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Art/UIPrefab/UIGameStartPanel.prefab
 Dependencies:
-- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/bg
-- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/fusion-pixel_ttf
+- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/bg"
+- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/fusion-pixel_ttf"

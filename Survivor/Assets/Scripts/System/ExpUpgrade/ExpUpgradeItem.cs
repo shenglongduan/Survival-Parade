@@ -32,7 +32,7 @@ namespace ProjectSurvivor
         {
             if (CurrentLevel.Value >= MaxLevel)
             {
-                return; // 等级已达上限，不执行升级
+                return; 
             }
 
             CurrentLevel.Value++;

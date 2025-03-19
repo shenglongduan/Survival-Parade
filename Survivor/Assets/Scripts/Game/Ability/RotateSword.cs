@@ -37,7 +37,7 @@ namespace ProjectSurvivor
 
                                     if (Random.Range(0, 1.0f) < 0.5f)
                                     {
-                                        collider.attachedRigidbody.linearVelocity =
+                                        collider.attachedRigidbody.velocity =
                                             collider.NormalizedDirection2DFrom(self) * 5 +
                                             collider.NormalizedDirection2DFrom(Player.Default) * 10;
                                     }
@@ -90,14 +90,11 @@ namespace ProjectSurvivor
         {
             float baseSpeed = Global.RotateSwordSpeed.Value;
 
-            // ������ת�Ƕ���������֤��ͬ֡���±���һ��
             float speed = Global.SuperRotateSword.Value
-                ? 10 * (Time.time * 60)  // ������ `Time.time * 60` ���� `Time.frameCount`
+                ? 10 * (Time.time * 60) 
                 : baseSpeed * (Time.time * 60);
 
-            // ��ת
             this.LocalEulerAnglesZ(-speed);
         }
-
     }
 }

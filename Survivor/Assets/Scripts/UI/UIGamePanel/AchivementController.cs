@@ -16,7 +16,7 @@ namespace ProjectSurvivor
 			var iconAtlas = mResLoader.LoadSync<SpriteAtlas>("icon");
 			AchievementSystem.OnAchievementUnlocked.Register(item =>
 			{
-				 Title.text = $"<b>Achivement {item.Name} Get!</b>";
+				 Title.text = $"<b>Achievement {item.Name} Achieved!</b>";
 				 Description.text = item.Description;
 				 var sprite = iconAtlas.GetSprite(item.IconName);
 				 Icon.sprite = sprite;

@@ -25,7 +25,7 @@ namespace ProjectSurvivor
                     {
                         s.GetComponentInChildren<Text>().text = "<b>" + achievementItem.Name +
                                                                 (achievementItem.Unlocked
-                                                                    ? "<color=green>【Get】</color>"
+                                                                    ? "<color=green>【Completed】</color>"
                                                                     : "") + "</b>\n" +
                                                                 achievementItem.Description;
                         var sprite = iconAtlas.GetSprite(achievementItem.IconName);

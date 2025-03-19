@@ -492,9 +492,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5962176376227813233, guid: 1211fd5ad8de004418cc112297759a22, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6154355193301154750, guid: 1211fd5ad8de004418cc112297759a22, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6617342172428370404, guid: 1211fd5ad8de004418cc112297759a22, type: 3}
       propertyPath: m_Name
       value: UIGameStartPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913316541804500912, guid: 1211fd5ad8de004418cc112297759a22, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8347530355985348839, guid: 1211fd5ad8de004418cc112297759a22, type: 3}
       propertyPath: m_Pivot.x

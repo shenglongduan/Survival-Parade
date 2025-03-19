@@ -6,7 +6,7 @@ Hashes:
     Hash: a45207cc03c872545cf5059de0316540
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 259c238821e744808b44c303985518ca
+    Hash: b4fa9a02f7ed383fb4a6067bee3430d6
   IncrementalBuildHash:
     serializedVersion: 2
     Hash: a45207cc03c872545cf5059de0316540
@@ -15,17 +15,17 @@ ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: 9807ffb6457faf9479406a7dd2c9ec38, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9807ffb6457faf9479406a7dd2c9ec38, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -56,5 +56,5 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Art/UIPrefab/UIGameOverPanel.prefab
 Dependencies:
-- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/bg
-- C:/Users/Administrator/Downloads/Survival-Parade-main/Survival-Parade-main/Survivor/AssetBundles/Windows/fusion-pixel_ttf
+- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/bg"
+- "C:/Users/Administrator/Desktop/\u81EA\u5236\u5E78\u5B58\u8005\u6E38\u620F/\u6700\u540E\u4E00\u7248/Survivor(2)/Survivor/AssetBundles/Windows/fusion-pixel_ttf"

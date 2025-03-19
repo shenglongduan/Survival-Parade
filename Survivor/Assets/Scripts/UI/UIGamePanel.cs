@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using QFramework;
+using System.Linq;
 
 namespace ProjectSurvivor
 {
@@ -42,10 +43,22 @@ namespace ProjectSurvivor
             ExpUpgradePanel.Hide();
             Global.Level.Register(lv =>
             {
+                var expUpgradeSystem = Global.Interface.GetSystem<ExpUpgradeSystem>(); 
+
+                // **检查是否所有技能都满级**
+                if (expUpgradeSystem.Items.All(item => item.UpgradeFinish))
+                {
+                    // **所有技能满级，直接给予回血/金币，不弹出升级面板**
+                    GiveHealthOrCoins();
+                    return;
+                }
+
+                // **否则，暂停游戏并弹出升级面板**
                 Time.timeScale = 0;
                 ExpUpgradePanel.Show();
                 AudioKit.PlaySound("LevelUp");
             }).UnRegisterWhenGameObjectDestroyed(gameObject);
+
 
             Global.Exp.RegisterWithInitValue(exp =>
             {
@@ -108,5 +121,21 @@ namespace ProjectSurvivor
         protected override void OnClose()
         {
         }
+
+        private void GiveHealthOrCoins()
+        {
+            if (Global.HP.Value < Global.MaxHP.Value && UnityEngine.Random.Range(0, 1.0f) < 0.2f)
+            {
+                // **20% 概率恢复 1 HP**
+                AudioKit.PlaySound("HP");
+                Global.HP.Value++;
+            }
+            else
+            {
+                // **否则奖励 50 金币**
+                Global.Coin.Value += 50;
+            }
+        }
+
     }
 }
